@@ -16,13 +16,16 @@ public class SpalshActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // for full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         getSupportActionBar().hide();
+        // this 3 line(20,21,22) is for full screen
+
+
         setContentView(R.layout.activity_spalsh);
 
+        // one way to do Spalsh screen activity
 //        new Handler().postDelayed(new Runnable() {
 //            @Override
 //            public void run() {
@@ -31,6 +34,8 @@ public class SpalshActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        },1000 * TIME_DELAY);
+        // end of one way
+
 
         SpalshScreenLauncher spalshScreenLauncher = new SpalshScreenLauncher();
         spalshScreenLauncher.start();
@@ -40,6 +45,7 @@ public class SpalshActivity extends AppCompatActivity {
 
 
     }
+    // and the second way to do this, extending Thread class and call the start() method from the object
     private class SpalshScreenLauncher extends Thread{
         @Override
         public void run() {
