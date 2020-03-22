@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+
+    <RadioGroup
+        android:id="@+id/rgCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Programming" />
+
+        <RadioButton
+            android:id="@+id/rbIos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IOS Programming" />
+
+        <RadioButton
+            android:id="@+id/rbReactN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="React Native" />
+
+        <RadioButton
+            android:id="@+id/rbFlutter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flutter" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Show" />
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        />
+
+</LinearLayout>
